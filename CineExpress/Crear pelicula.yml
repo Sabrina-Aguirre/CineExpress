@@ -1,0 +1,17 @@
+info:
+  name: Crear pelicula
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3001/peliculas
+  body:
+    type: json
+    data: '{ "titulo": "El Viaje de Chihiro",  "genero": "anime", "duracion": 124, "rating": 7.8, "idiomas": ["español", "japones"] }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

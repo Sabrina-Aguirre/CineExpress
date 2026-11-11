@@ -1,0 +1,18 @@
+info:
+  name: Peliculas filtros
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3001/peliculas/1
+  body:
+    type: json
+    data: '{ "titulo": "El Viaje de chijiro",  "genero": "aventura", "duracion": 124, "rating": 1, "idiomas": ["español", "inglés"] }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
